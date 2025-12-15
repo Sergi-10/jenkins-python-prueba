@@ -1,11 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Clonar repositorio') {
+        stage('Ejecutar script Python') {
             steps {
-                git credentialsId: 'github-token',
-                    url: 'https://github.com/Sergi-10/jenkins-python-prueba.git'
+                sh 'python3 script.py'
             }
         }
     }
