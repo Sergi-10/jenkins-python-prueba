@@ -8,11 +8,5 @@ pipeline {
                     url: 'https://github.com/Sergi-10/jenkins-python-prueba.git'
             }
         }
-
-        stage('Ejecutar script Python') {
-            steps {
-                sh 'python3 script.py'
-            }
-        }
     }
 }
